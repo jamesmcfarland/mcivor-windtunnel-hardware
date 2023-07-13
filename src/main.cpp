@@ -162,6 +162,8 @@ void loop()
   Serial.print(" ");
   Serial.print(motor4Speed);
   Serial.print(" ");
+  Serial.print(round((motor1Speed + motor2Speed + motor3Speed + motor4Speed) / 4.0F));
+  Serial.print(" ");
   Serial.print(iter);
   Serial.println();
   delay(250);
